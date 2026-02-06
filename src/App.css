@@ -1,0 +1,32 @@
+*{
+  cursor: none !important;
+}
+
+a, button, [role= "button"]{
+  cursor:none !important;
+}
+
+a, button, input, select, textarea, [role="button"], .cursor-pointer {
+  cursor: none !important;
+}
+
+/* Se você estiver usando o Tailwind, adicione isso para garantir que as classes dele não sobrescrevam */
+.cursor-pointer, .cursor-default {
+  cursor: none !important;
+}
+
+
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
