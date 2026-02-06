@@ -1,6 +1,5 @@
 import { motion } from 'framer-motion';
 import Navigation from '@/components/Navigation';
-import CustomCursor from '@/components/CustomCursor';
 import HeroSection from '@/components/HeroSection';
 import GallerySection from '@/components/GallerySection';
 import Footer from '@/components/Footer';
@@ -19,7 +18,6 @@ const manifestoLines = [
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
-      <CustomCursor />
       <Navigation />
       
       <main>
@@ -74,7 +72,6 @@ const Index = () => {
             {/* Scattered floating elements */}
             <ScrollReveal className="absolute top-0 left-0 md:left-10">
               <motion.div
-                animate={{ y: [0, -15, 0] }}
                 transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
                 className="text-center"
               >
@@ -85,7 +82,6 @@ const Index = () => {
 
             <ScrollReveal delay={0.2} className="absolute top-20 right-0 md:right-20">
               <motion.div
-                animate={{ y: [0, 10, 0] }}
                 transition={{ duration: 5, repeat: Infinity, ease: "easeInOut", delay: 1 }}
                 className="text-right"
               >
@@ -94,20 +90,18 @@ const Index = () => {
               </motion.div>
             </ScrollReveal>
 
-            <ScrollReveal delay={0.4} className="absolute bottom-0 left-1/4">
+            <ScrollReveal delay={0.4} className="absolute bottom-0 left-1/4 arrependimento">
               <motion.div
-                animate={{ y: [0, -10, 0] }}
                 transition={{ duration: 6, repeat: Infinity, ease: "easeInOut", delay: 2 }}
                 className="text-center"
               >
-                <span className="block font-display text-6xl md:text-8xl font-bold text-foreground/50">0</span>
+                <span className="block font-display text-6xl md:text-8xl font-bold text-foreground/50 ">0</span>
                 <span className="text-muted-foreground text-xs tracking-[0.3em] uppercase font-body">arrependimentos</span>
               </motion.div>
             </ScrollReveal>
 
             <ScrollReveal delay={0.6} className="absolute bottom-10 right-1/4">
               <motion.div
-                animate={{ rotate: [0, 5, -5, 0] }}
                 transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
                 className="border border-gold/30 p-6 md:p-8"
               >

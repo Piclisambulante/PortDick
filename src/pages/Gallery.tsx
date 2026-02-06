@@ -2,7 +2,6 @@ import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, ChevronLeft, ChevronRight } from 'lucide-react';
 import Navigation from '@/components/Navigation';
-import CustomCursor from '@/components/CustomCursor';
 import Footer from '@/components/Footer';
 import ScrollReveal from '@/components/ScrollReveal';
 
@@ -47,7 +46,6 @@ const Gallery = () => {
 
   return (
     <div className="min-h-screen bg-background">
-      <CustomCursor />
       <Navigation />
 
       <main className="pt-32 pb-24 px-6">

@@ -4,7 +4,6 @@ import { Calendar, Clock, User, Mail, Phone, Check, ChevronLeft, ChevronRight, I
 import { format, addMonths, subMonths, startOfMonth, endOfMonth, eachDayOfInterval, isSameDay, isToday } from 'date-fns';
 import { ptBR } from 'date-fns/locale';
 import Navigation from '@/components/Navigation';
-import CustomCursor from '@/components/CustomCursor';
 import Footer from '@/components/Footer';
 import ScrollReveal from '@/components/ScrollReveal';
 import { toast } from 'sonner';
@@ -82,7 +81,6 @@ ${formData.idea || 'Não informada'}
 
   return (
     <div className="min-h-screen bg-background">
-      <CustomCursor />
       <Navigation />
 
       <main className="pt-32 pb-24 px-6">

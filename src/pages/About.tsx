@@ -1,6 +1,5 @@
 import { motion } from 'framer-motion';
 import Navigation from '@/components/Navigation';
-import CustomCursor from '@/components/CustomCursor';
 import Footer from '@/components/Footer';
 import ScrollReveal from '@/components/ScrollReveal';
 import ParallaxSection from '@/components/ParallaxSection';
@@ -12,7 +11,6 @@ const artists = [
 const About = () => {
   return (
     <div className="min-h-screen bg-background">
-      <CustomCursor />
       <Navigation />
 
       <main>

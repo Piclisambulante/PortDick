@@ -1,25 +1,19 @@
 *{
-  cursor: none !important;
+  cursor: auto;
 }
 
-a, button, [role= "button"]{
-  cursor:none !important;
+html, body{
+  cursor: auto;
 }
-
-a, button, input, select, textarea, [role="button"], .cursor-pointer {
-  cursor: none !important;
-}
-
-/* Se você estiver usando o Tailwind, adicione isso para garantir que as classes dele não sobrescrevam */
-.cursor-pointer, .cursor-default {
-  cursor: none !important;
-}
-
-
-
 @media (prefers-reduced-motion: no-preference) {
   a:nth-of-type(2) .logo {
     animation: logo-spin infinite 20s linear;
+  }
+}
+
+@media (max-width: 600px) {
+  .arrependimento{
+    display: none;
   }
 }
 
